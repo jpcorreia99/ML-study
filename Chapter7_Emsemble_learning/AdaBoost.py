@@ -9,7 +9,7 @@ plt.show()
 X_train, Y_train, X_test, Y_test = X[:4000], Y[:4000], X[:4000], Y[:4000]
 
 ada_clf = AdaBoostClassifier(
-    DecisionTreeClassifier(max_depth=1),  # the one that comes default7
+    DecisionTreeClassifier(max_depth=1),  # the one that comes by default
     n_estimators=200,
     algorithm="SAMME.R",  # algorithm that can only be used if the base estimator outputs class_probabilities
     learning_rate=0.5)
